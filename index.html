@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>John's Creative and Digital Marketing</title>
+  <style>
+    :root{
+      --accent:#0b76ef;
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --radius:12px;
+      --maxw:960px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#111;line-height:1.5}
+    .wrap{max-width:var(--maxw);margin:32px auto;padding:20px}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+    .avatar{width:84px;height:84px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#6dd5fa);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:22px}
+    p.lead{margin:6px 0;color:var(--muted)}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .chip{background:#eef2ff;padding:8px 10px;border-radius:999px;font-size:13px}
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:14px}
+    a.cta{display:inline-block;margin-top:12px;background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none}
+    @media (max-width:600px){
+      .avatar{width:64px;height:64px;font-size:20px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">JC</div>
+      <div>
+        <h1>John's Creative and Digital Marketing</h1>
+        <p class="lead">I'm a multidisciplinary creative blending imagination with digital innovation. From visual storytelling to sleek digital design, I craft experiences that connect, inspire, and elevate. Whether it's branding, content creation, or digital strategy, I bring ideas to life with purpose and personality.</p>
+        <a class="cta" href="mailto:jmuasa71@gmail.com">Contact Me</a>
+      </div>
+    </header>
+
+    <div class="card">
+      <h2>Skills & Services</h2>
+      <div class="skills">
+        <div class="chip">Writing</div>
+        <div class="chip">Culinary Arts</div>
+        <div class="chip">Brand Strategy</div>
+        <div class="chip">Content Creation</div>
+        <div class="chip">Digital Marketing</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:jmuasa71@gmail.com">jmuasa71@gmail.com</a></p>
+    </div>
+
+    <footer>
+      © <span id="year"></span> John's Creative and Digital Marketing — Built with ❤️
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
